@@ -8,8 +8,8 @@ module.exports = {
     path: path.resolve(__dirname, './dist'),
     publicPath: '/dist/',
     // filename: 'build.js'
-    filename:'v-toast.js',
-    library:'v-toast',
+    filename:'v-toast-cj.js',
+    library:'v-toast-cj',
     libraryTarget:'umd',
     umdNamedDefine: true // 会对 UMD 的构建过程中的 AMD 模块进行命名。否则就使用匿名的 define。
   },

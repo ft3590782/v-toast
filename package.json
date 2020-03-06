@@ -1,6 +1,6 @@
 {
-  "name": "v-toast",
-  "description": "A Vue.js project",
+  "name": "v-toast-cj",
+  "description": "A Vue Toast Component",
   "version": "1.0.0",
   "author": "cloudjay",
   "license": "MIT",
@@ -31,6 +31,6 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ft3590782/v-toast"
+    "url": "https://github.com/ft3590782/v-toast-cj"
   }
 }

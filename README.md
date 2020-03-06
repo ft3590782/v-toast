@@ -1,6 +1,6 @@
-# v-toast
+# v-toast-cj
 
-> A Vue.js project
+> A Vue Toast Component
 
 ## Build Setup
 
