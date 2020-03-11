@@ -4,7 +4,6 @@ let Toast = {}
 Toast.install = function (Vue, options) {
   const TOAST = Vue.extend(toast)
   let remove = event => {
-
     if (event.parentNode.childNodes.length > 1) {
       event.parentNode.removeChild(event)
     } else {
@@ -13,7 +12,12 @@ Toast.install = function (Vue, options) {
   }
   // 实现toast的关闭方法
   TOAST.prototype.close = function () {
-    this.visible = false
+    return new Promise(resolve => {
+      this.visible = false
+      setTimeout(() => {
+        resolve()
+      }, 1000)
+    })
   }
 
   Vue.prototype.$toast = option => {
@@ -24,8 +28,9 @@ Toast.install = function (Vue, options) {
     document.body.appendChild(instance.$el)
     // 自动关闭功能的实现
     setTimeout(function () {
-      instance.close()
-      remove(instance.$el)
+      instance.close().then(() => {
+        remove(instance.$el)
+      })
     }, duration)
   }
 }

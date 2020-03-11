@@ -1,13 +1,13 @@
 {
   "name": "v-toast-cj",
   "description": "A Vue Toast Component",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "author": "cloudjay",
   "license": "MIT",
   "private": false,
   "main": "dist/v-toast-cj.js",
   "scripts": {
-    "dev": "cross-env NODE_ENV=development webpack-dev-server --open --hot",
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --config ./webpack.test.config.js  --open --hot",
     "build": "cross-env NODE_ENV=production webpack --progress --hide-modules"
   },
   "dependencies": {
