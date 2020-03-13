@@ -38,9 +38,9 @@ export default {
   z-index: 888;
   max-width: 80%;
   color: #fff;
-  border-radius: 20px;
-  padding: 30px 34px;
-  background: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  padding: 15px;
+  background: rgba(0, 0, 0, 0.6);
   overflow: hidden;
 
 }
